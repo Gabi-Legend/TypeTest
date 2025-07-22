@@ -31,9 +31,10 @@
   transition: 0.27s ease-in-out;
   color: white;
   font-weight: bolder;
+  border-radius: 8px;
 }
 
 .startButton:hover {
   background-color: green;
-  margin-bottom: 20px;
+  cursor: pointer;
 }
