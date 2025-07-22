@@ -14,7 +14,7 @@ function ChooseWords() {
         <input
           type="number"
           max={100}
-          min={10}
+          min={5}
           value={words}
           onChange={(e) => {
             handleWordsChange(e.target.value);
@@ -24,10 +24,10 @@ function ChooseWords() {
       <button
         className={styles.startButton}
         onClick={() => {
-          if (words) {
+          if (words && words >= 5 && words <= 100) {
             navigate("/type-test", { state: { words } });
           } else {
-            alert("Choose how many words you want!");
+            alert("Choose between 5 and 100!");
           }
         }}
       >
