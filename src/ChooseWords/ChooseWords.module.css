@@ -1,13 +1,13 @@
 .container {
   background-color: white;
-  padding: 20px;
-  border: 2px solid black;
-  border-radius: 18px;
+  padding: 30px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   min-height: 50vh;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .title {
@@ -18,23 +18,46 @@
 }
 
 .desc {
-  color: grey;
-  font-size: 15px;
+  color: #4a4a4a;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .startButton {
-  margin-top: 15px;
-  background-color: yellowgreen;
-  border: 1px solid lightgray;
-  padding: 5px;
+  margin-top: 20px;
+  background-color: #8bc34a;
+  border: none;
+  padding: 12px 20px;
   font-size: 16px;
-  transition: 0.27s ease-in-out;
+  transition: background-color 0.3s ease;
   color: white;
-  font-weight: bolder;
-  border-radius: 8px;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
 .startButton:hover {
-  background-color: green;
+  background-color: #689f38;
   cursor: pointer;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
 }
